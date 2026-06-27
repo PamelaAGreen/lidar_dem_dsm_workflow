@@ -39,19 +39,30 @@ A few parts were intentionally kept simple in this version, especially:
 - user configuration and packaging
 - more advanced urban / vegetation handling
 
-## How to run it
+## Installation and setup
 
-This project is currently organized as a Jupyter Notebook workflow.
+This project is organized as a Jupyter Notebook workflow and is intended to run in a dedicated Python environment.
 
-1. Clone the repository
-2. Create and activate a virtual environment
-3. Install the required Python packages
-4. Place your input `.las` or `.laz` file in the expected data directory
-5. Update the configuration cell as needed
-6. Run the notebook from top to bottom
+1. Clone the repository and move into the project folder:
+   ```bash
+   git clone https://github.com/<your-username>/<your-repo>.git
+   cd <your-repo>
+   ```
 
-A future version may split the workflow into reusable modules or a command-line pipeline.
+2. (Recommended) Create and activate a virtual environment:
+   ```bash
+   python -m venv .venv
+   source .venv/bin/activate  # On Windows PowerShell: .venv\Scripts\Activate.ps1
+   ```
+   
+3. Install the required Python packages from `requirements.txt`:
+   ```bash
+   pip install -r requirements.txt
+   ```
 
+4. Place your input `.las` or `.laz` file under `data/raw/` and update the `LIDAR_FILENAME` and path settings in the configuration cell of `lidar_dem_dsm_workflow.ipynb`.
+
+5. Open `lidar_dem_dsm_workflow.ipynb` in JupyterLab, VS Code, or another notebook interface and run the cells from top to bottom.
 ## Inputs and outputs
 
 **Input**
