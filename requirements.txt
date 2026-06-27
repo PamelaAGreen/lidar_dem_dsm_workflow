@@ -1,0 +1,15 @@
+numpy
+pandas
+matplotlib
+pyproj
+laspy[lazrs]
+geopandas
+shapely
+whitebox-workflows
+CSF-3DFin
+xarray
+rioxarray
+rasterio
+scipy
+tqdm
+ipython
