@@ -1,4 +1,5 @@
 .DS_Store
+CheckLiDAROutputs.qgz
 data/raw/**
 data/processed/**
 
