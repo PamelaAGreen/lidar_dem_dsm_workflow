@@ -4,9 +4,9 @@ A Python-based workflow for processing large drone LiDAR point clouds into DEM, 
 
 ## Why I built this
 
-I originally developed this prototype while working in consulting, where drone LiDAR processing using proprietary software was often time-consuming, highly manual, and more expensive than it needed to be. The goal was to explore whether a more automated, reproducible workflow could reduce both total processing time and the amount of user interaction required, helping teams move data through analysis faster while also avoiding unnecessary project budget overhead.
+I originally developed a prototype of this code while working in consulting, where drone LiDAR processing using proprietary software was often time-consuming, highly manual, and more expensive than it needed to be. The goal was to explore whether a more automated, reproducible workflow could reduce both total processing time and the amount of user interaction required, helping teams move data through analysis faster while also avoiding unnecessary project budget overhead.
 
-This repository is a **prototype** built to test large drone LiDAR datasets and evaluate a more efficient processing approach. It was always intended as a starting point for further development rather than a finished production package.
+This repository has been expanded from the orignal prototype to test large drone LiDAR datasets and evaluate a more efficient processing approach. It is intended as foundational LiDAR processing code which can be built upon for further development.
 
 ## What it does
 
@@ -28,11 +28,7 @@ The workflow includes:
 - DEM / DSM grid alignment before nDSM generation
 - Basic tile-level QA summaries
 
-## Current status
-
-This is an **early prototype / proof of concept** designed to test performance and workflow structure on very large drone LiDAR datasets. It is useful as a transparent reference workflow, but it should still be considered under active development.
-
-A few parts were intentionally kept simple in this version, especially:
+A few processes have been intentionally kept simple in this version, notably:
 
 - DEM void filling
 - QA / validation outputs
