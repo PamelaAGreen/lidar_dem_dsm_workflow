@@ -66,7 +66,10 @@ This project is organized as a Jupyter Notebook workflow and is intended to run 
 
 4. Place your input `.las` or `.laz` file under `data/raw/` (the sample dataset linked above works for a first test) and update the `LIDAR_FILENAME` and path settings in the configuration cell of `lidar_dem_dsm_workflow.ipynb`.
 
-5. Open `lidar_dem_dsm_workflow.ipynb` in JupyterLab, VS Code, or another notebook interface and run the cells from top to bottom.
+5. **Check and set `FALLBACK_CRS`** in the configuration cell. If your `.las`/`.laz` file has no coordinate reference system (CRS) in its header, the workflow uses this value instead, so it must match your data (for example, `"EPSG:32618"`). The default, `EPSG:7791`, is specific to the sample dataset and may not work for other data. An incorrect CRS will produce misplaced rasters without raising an error.
+
+6. Open `lidar_dem_dsm_workflow.ipynb` in JupyterLab, VS Code, or another notebook interface and run the cells from top to bottom.
+
 ## Inputs and outputs
 
 **Input**
